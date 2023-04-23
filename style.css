@@ -16,15 +16,18 @@
     padding: 0;
 }
 
+@media (max-width: 1000px) {
 .cabecalho {
     background-color: var(--cor-fundo);
     padding: 2% 2% 1.6% 15%;
+   
 }
 
 .cabecalho_menu {
-    display: flex;
+   /* display: flex;*/
     gap: 80px;
-
+    justify-direction: column-reverse;
+    }
 }
 
 .cabecalho_menu_link {
@@ -46,8 +49,9 @@ body {   /*  pagina */
     color: #f6f6f6;
 }
 
+@media (max-width: 1000px) {
 .apresentacao { /* section e  img */
-    display: flex; /* alinhamento em linha */ 
+   /* display: flex; alinhamento em linha */ 
     align-items: center;
     /* margin: 10% 20%;  */
     padding: 6% 25%;
@@ -55,7 +59,9 @@ body {   /*  pagina */
     background-color: var(--cor-fundo);
     color: var(--cor-primaria);
     justify-content: space-between;
-
+     justify-direction: column-reverse;
+    gap: 82px;
+    }
 }
 
 .apresentacao_conteudo {  /* section */
@@ -64,7 +70,7 @@ body {   /*  pagina */
     flex-direction:column /* alinhamento em coluna */
     
       /* gap espaçamentoentres as linhas e colunas  */
-    
+    width: auto;
 }
 
 
