@@ -26,7 +26,7 @@
 .cabecalho_menu {
    /* display: flex;*/
     gap: 80px;
-    justify-direction: column-reverse;
+   /* justify-direction: column-reverse;*/
     }
 }
 
@@ -42,11 +42,14 @@
     color: var(--cor-destaque);
 }
 
+@media (max-width: 1000px) {
 body {   /*  pagina */
     height: 100vh;
     box-sizing: border-box;
     background-color: black;
     color: #f6f6f6;
+    flex-direction: column
+    }
 }
 
 @media (max-width: 1000px) {
@@ -59,7 +62,7 @@ body {   /*  pagina */
     background-color: var(--cor-fundo);
     color: var(--cor-primaria);
     justify-content: space-between;
-     justify-direction: column-reverse;
+/*      justify-direction: column-reverse; */
     gap: 82px;
     }
 }
@@ -145,7 +148,7 @@ body {   /*  pagina */
 }
 
 .imagem {
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     Height: 400px;
@@ -153,7 +156,7 @@ body {   /*  pagina */
     width: 250px;
     border-radius: 16px;
     margin-bottom: 200px;
-   
+    justify-direction: column-reverse;
  }
 
 .rodape {
